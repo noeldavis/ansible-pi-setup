@@ -1,0 +1,8 @@
+---
+
+- name: Apply to all hosts 
+  hosts: all
+
+  roles: 
+    - basic-pi
+
