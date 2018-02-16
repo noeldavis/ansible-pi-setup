@@ -1,0 +1,33 @@
+---
+
+
+- name: Set up Noel Account Group
+  group:
+    name: noeld
+    gid: 200
+    state: present
+
+- name: Set up Noel Account
+  user:
+    name: noeld
+    comment: "Noel Davis"
+    uid: 1040
+    group: noeld
+    password: $6$4trArTH1$OLnl5Yv830xy/l4lqjOb6MGKNeWYmqd6nZJgEMhhewLmhVlXDfswppXcb8EFrkDJgLPmMBVWJxlNe0VSV1T9Q1
+    generate_ssh_key: yes
+    ssh_key_bits: 2048
+    ssh_key_file: .ssh/id_rsa
+
+- copy:
+    src: authorized_keys
+    dest: /home/pi/.ssh/
+    mode: 0600
+    owner: pi
+    group: pi
+
+- copy:
+    src: authorized_keys
+    dest: /home/noeld/.ssh/
+    mode: 0600
+    owner: noeld
+    group: noeld

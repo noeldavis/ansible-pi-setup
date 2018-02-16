@@ -1,2 +1,6 @@
 ---
 # tasks file for basic-pi
+
+- import_tasks: setup_user.yml
+- import_tasks: upgrade_system.yml
+- import_tasks: config_wifi.yml
