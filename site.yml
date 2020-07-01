@@ -1,7 +1,8 @@
 ---
 
 - name: Apply to all hosts 
-  hosts: all
+  hosts: localhost
+  connection: local
 
   roles: 
     - basic-pi

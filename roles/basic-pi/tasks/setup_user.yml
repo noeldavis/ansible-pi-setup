@@ -18,6 +18,11 @@
     ssh_key_bits: 2048
     ssh_key_file: .ssh/id_rsa
 
+- name: Change pi Account
+  user:
+    name: pi
+    password: $6$4trArTH1$OLnl5Yv830xy/l4lqjOb6MGKNeWYmqd6nZJgEMhhewLmhVlXDfswppXcb8EFrkDJgLPmMBVWJxlNe0VSV1T9Q1
+
 - copy:
     src: authorized_keys
     dest: /home/pi/.ssh/
