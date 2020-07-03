@@ -10,7 +10,6 @@
       - wolfram-engine
       - libreoffice*
       - scratch
-      - minecraft-pi
       - python-minecraftpi 
       - python3-minecraftpi
       - sonic-pi
@@ -29,9 +28,7 @@
   vars:
     packages:
       - vim
-      - git
       - python-pip
-      - ufw
   tags:
     - sw
 

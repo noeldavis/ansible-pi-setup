@@ -1,6 +1,8 @@
 ---
 # tasks file for basic-pi
 
+- import_tasks: upgrade_system.yml
+
 # Gather facts specific to the Raspberry Pi platform
 - import_tasks: linux-facts.yml
 - import_tasks: raspi-facts.yml
@@ -66,4 +68,3 @@
 
 
 - import_tasks: setup_user.yml
-- import_tasks: upgrade_system.yml
