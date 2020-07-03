@@ -1,7 +1,29 @@
 ---
     macaddrs:
-        b8:27:eb:39:d7:57:
-            hostname: "PiDesktop"
+        b8:27:eb:a1:df:ca:
+            hostname: "PiDesktopeth"
+            domain: "local"
+            locale: "en_US.UTF-8"
+            timezone: "America/New_York"
+            xkblayout: "us"
+            wifi_country: "US"
+            enable_gui: True
+            enable_autologin: False
+            enable_bootwait: False
+            enable_bootsplash: False
+            enable_camera: False
+            enable_vnc: False
+            enable_spi: False
+            enable_i2c: False
+            enable_serial: False
+            enable_serial_hw: False
+            enable_onewire: False
+            enable_rgpio: False
+            darshan_dev: True
+            extra_software:
+              - "libglib2.0-dev"
+        b8:27:eb:f4:8a:9f:
+            hostname: "PiDesktopwifi"
             domain: "local"
             locale: "en_US.UTF-8"
             timezone: "America/New_York"
