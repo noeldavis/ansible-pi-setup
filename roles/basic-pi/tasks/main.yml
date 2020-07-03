@@ -1,5 +1,11 @@
 ---
 # tasks file for basic-pi
 
+- import_tasks: linux-facts.yml
+- import_tasks: raspi-facts.yml
+- import_tasks: raspi-config.yml
+- import_tasks: software.yml
+
+
 - import_tasks: setup_user.yml
 - import_tasks: upgrade_system.yml
