@@ -47,13 +47,6 @@
   tags:
     - raspi
 
-- name: get wifi country
-  shell: "raspi-config nonint get_wifi_country"
-  register: raspi_wifi_country
-  changed_when: False
-  check_mode: no
-  tags:
-    - raspi
 
 - name: get camera status
   shell: "raspi-config nonint get_camera" # 0 == "camera enabled"; 1 == "camera disabled"
