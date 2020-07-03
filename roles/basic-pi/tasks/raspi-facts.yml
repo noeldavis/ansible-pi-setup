@@ -188,7 +188,6 @@
   set_fact:
     raspi_type: "{{ raspi_type.stdout }}"
     raspi_hostname: "{{ raspi_hostname.stdout }}"
-    raspi_wifi_country: "{{ raspi_wifi_country.stdout }}"
     raspi_gui_enabled: "{{ raspi_boot_gui.stdout != '0' }}"
     raspi_autologin_enabled: "{{ raspi_noautologin.stdout == '0' }}"
     raspi_bootwait_enabled: "{{ raspi_boot_nowait.stdout == '0' }}"
