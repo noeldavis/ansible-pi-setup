@@ -10,9 +10,8 @@ Boot
 
 Login to pi@IP
 
-sudo apt install git
+sudo apt install git ansible -y
 
-sudo apt install ansible
 
 git clone [https://github.com/noeldavis/ansible-pi-setup.git](https://github.com/noeldavis/ansible-pi-setup.git)
 
