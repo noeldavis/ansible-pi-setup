@@ -88,7 +88,7 @@
             darshan_dev: False
             extra_software:
               - "libglib2.0-dev"                     
-        b8:27:eb:f4:8a:9f:
+      b8:27:eb:f4:8a:9f:
             hostname: "leader"
             domain: "local"
             locale: "en_US.UTF-8"
